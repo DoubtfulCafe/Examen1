@@ -29,3 +29,4 @@ Route::post('/directorio/guardar', [DirectorioController::class, 'store'])->name
 Route::get('/directorio/eliminar/{id}', [DirectorioController::class, 'delete'])->name('directorio.delete');
 Route::get('/directorio/destroy/{id}', [DirectorioController::class, 'destroy'])->name('directorio.destroy');
 
+Route::get('/directorio/buscar', [DirectorioController::class, 'buscar'])->name('directorio.buscar');

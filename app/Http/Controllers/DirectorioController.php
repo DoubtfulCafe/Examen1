@@ -51,4 +51,9 @@ class DirectorioController extends Controller
 
     }
 
+    public function buscar(){
+        $contactos=contacto::where('condigoEntrada');
+        return view('buscar',compact('directorio'),compact('contactos'));
+    }
+
 }
